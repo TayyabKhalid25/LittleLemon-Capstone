@@ -7,6 +7,7 @@ router = DefaultRouter()
 router.register(r'booking', views.BookingViewSet)
 
 urlpatterns = [
+    path('', views.index, name='index'),
     path('', include(router.urls)),
     path('api-token-auth/', obtain_auth_token),
     path('menu/', views.MenuItemsView.as_view(), name="menu"),

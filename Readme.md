@@ -16,3 +16,19 @@ Here are the API endpoints to test:
 
 Note: For authenticated requests, include the header:
 Authorization: Token <your_token>
+
+## Getting Started
+
+### Create a Superuser
+To test the authentication features, you will need a user account. You can create a superuser by running:
+
+```bash
+python manage.py createsuperuser
+```
+
+Follow the prompts to set a username and password. You can then use these credentials to log in via the web interface or API.
+
+## Access the Application
+
+You can access the main application interface at:
+http://127.0.0.1:8000/restaurant/
